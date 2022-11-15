@@ -30,7 +30,7 @@ for password in file.readlines():
 
 # collect the data needed from "inspect element"
 
-   data = {'login':login, 'password':password, "submit":'submit'}
+   data = {'username':username, 'password':password, "login-submit":'submit'}
 
    send_data_url = requests.post(url, data=data)
 
